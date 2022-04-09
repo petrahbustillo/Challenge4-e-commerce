@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+body {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    background: #F5F5F5;
+}
+.header-principal {
+    width: 100%;
+    height: 115px;
+    top: 0px;
+    background-color: #FFFFFF;
+}
+.header-secundario{
+    width: 1136px;
+    max-width: 1920px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 24px 0px;
+    margin: 0px auto;
+ }
+.header-logo{
+    width: 601px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+.logo {
+    font-size: 24px;
+    width: 176px;
+    display: flex;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.logo::before {
+    content: "Magic";
+    color: #2A7AE4;
+    left: 20.2%;   
+}
+.logo::after {
+    content: "Bubble";
+    color: #464646;
+    left: 25.8%;
+}
+.header-busqueda {
+    width: 393px;
+    height: 30px;
+    background: rgba(245, 245, 245, 1);
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px; 
+}
+.header-buscador {
+    width: 384px;
+    border: none;
+    outline: none;
+    background: rgba(245, 245, 245, 1);
+    font-family: Raleway, sans-serif;
+}
+.header-busqueda .fa {
+    color: #9d9d9a;
+    cursor: pointer;
+}
+.header-login {
+    width: 182px;
+    height: 51px;
+    box-sizing: border-box;
+    border: 1px solid #2A7AE4;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:  #2A7AE4;
+    border-radius: 5px;
+}
+.hero {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.banner-principal {
+    background-image: url(../imagenes/banner-imagen.png);
+    width: 100%;
+    margin: 0px auto 0 auto;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+.banner-container {
+    width: 43%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-end;
+    padding: 40px 0px 0px;
+}
+.banner-titulo {   
+    font-family: 'Raleway', sans-serif;
+    color: #faf9f8;
+    font-weight: 700 Bold;
+    font-size: 62px;
+    margin: 0px;
+    margin-top: 20px;
+}
+.banner-texto {
+    font-family: 'Raleway', sans-serif;
+    color: #faf9f8;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px;
+}
+.banner-texto span {
+    font-family: 'Raleway';
+    color: #f88d28ed;
+    font-weight: 700;
+    font-size: 42px;
+    margin: auto; 
+}
+.banner-boton {
+    width: 129px;
+    height: 30px;
+    background: #e4842a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 48px;
+    cursor: pointer;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: #faf9f8;
+}
+.linea-articulos {
+    height: 306px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0px 0px;
+}
+.container-articulos {
+    width: 1136px;
+    max-width: 1920px;
+    height: 306px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px; 
+}
+.header-articulos {
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px; 
+}
+h2 {
+   font-size: 32px;
+   font-weight: 700;
+   font-family: 'Raleway', sans-serif; 
+   color: #464646;
+}
+.link-articulos {
+    font-size: 16px;
+    color: #2A7AE4;
+    font-weight: 700;
+}
+.fa {
+    color: #2A7AE4;
+    font-weight: 800;
+}
+.articulos {
+    width: 1136px;
+    height: 252px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+}
+.card-articulo {
+    position: static;
+    width: 176px;
+    height: 252px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 0px;
+    gap: 8px;
+    background-color: #ffffff;
+}
+.card-articulo img {
+    width: 176px;
+    height: 174px;
+}
+.nombre-articulo {
+    font-family: Raleway;
+    font-weight: 500, Medium;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    padding: 0px;
+    margin: 0px;
+}
+.precio-articulo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #464646;
+    padding: 0px;
+    margin: 0px;
+}
+.card-articulo a {
+    text-decoration: none;
+ }
+.link-articulo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2A7AE4;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 50px 0px;
+    background: #EAF2FD;
+}
+.footer-container {
+    width: 1136px;
+    max-width: 1920px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-logo {
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0px;
+}
+.footer-logo::before {
+    content: "Magic";
+    color: #2A7AE4;
+    left: 20.2%;   
+}
+.footer-logo::after {
+    content: "Bubble";
+    color: #464646;
+    left: 23.7%;
+    position: absolute;
+}
+.footer-links {
+    width: 176px;
+    height: 240px;
+    left: 288px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-links a {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500, Medium;
+    color: #464646;
+}
+.footer-contact {
+    width: 560px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway;
+}
+.footer-contacto {
+    font-weight: 700;
+    color: #464646;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+.form-label {
+    font-weight: 300;
+    padding: 8px;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.form-nombre {
+    font-size: 16px;
+    font-family: Raleway;
+    border: none;
+    border-bottom: 1.5px solid rgb(192, 191, 191);
+    outline: none;
+    padding: 8px;
+}
+.form-mensaje {
+    width: 552px;
+    height: 68px;
+    font-size: 16px;
+    font-family: Raleway;
+    border: none;
+    border-bottom: 1.5px solid rgb(192, 191, 191);
+    outline: none;
+    padding: 8px 0px 0px 8px; 
+    resize: none;
+    background-color: #FFFFFF;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px; 
+}
+.form-btn {
+    color: #FFFFFF;
+    padding: 16px 48px;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: #2A7AE4;
+    border-radius: 5px;
+}
+.form-btn:hover {
+    background: darkorange;
+}
+.footer-sboard {
+    background: #FFFFFF;
+    height: 102px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.copyright {
+    color:#464646;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500, Medium;
+    padding: 20px 0px 0px;
+}
+
+/*Responsive al 100%*/  
+@media (max-width: 768px){
+    .header-principal {
+        width: 768px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 16px 0px;
+        margin: 0px;
+    }
+    .header-secundario {
+        width: 726px;
+        max-width: 1920px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .header-logo{
+        width: 404px;
+        height: 40px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .header-busqueda {
+        width: 252px;
+    }
+    .header-login {
+        width: 156px;
+        height: 40px;
+        padding: 0px; 
+    }
+    .banner-principal {
+        width: 768px;
+        padding: 16px;
+        margin: 0px;
+    }
+    .banner-container {
+        width: 768px;
+        height: 159px;
+        max-width: 1920px;
+    }
+    .banner-titulo {
+        font-size: 35px;
+    }
+    .banner-texto {
+       font-size: 16px;
+    }
+    .banner-texto span {
+        font-size: 24px;
+    }
+    .banner-boton {
+        width: 118px;
+        height: 40px;
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .linea-articulos {
+        width: 768px;
+        height: 250px;
+        margin: 18px 0px 0px 16px;
+        
+    }
+    .container-articulos {
+        width: 768px;
+        height: 250px;
+        max-width: 1920px;
+        display: flex;
+        flex-direction: column;
+    } 
+    .articulos {
+        width: 728px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 12px;
+    }
+    .card-articulo {
+    height: 50%;
+    }
+    .card-articulo img {
+        width: 100%;
+        height: 100%;
+    }
+    .nombre-articulo {
+        font-size: 12px;
+    }
+    .precio-articulo {
+        font-size: 13px;
+    }
+    .link-articulo {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    .header-articulos a {
+        margin: 0px 45px;
+    }
+    .footer {
+        width: 768px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 0px 12px;
+    }
+    .footer-container {
+        width: 100%;
+        max-width: 1920px;
+        height: 260px;
+        display: flex;   
+    }
+    .footer-logo {
+        font-size: 24px;
+        width: 40%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .footer-logo::after {
+        left: 10.4%;
+    }
+    .footer-links {
+        position: relative;
+        width: 350px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        left: -145px;
+        padding-top: 50px;
+        gap: 15px;
+    }
+    .footer-contact {
+        position: relative;
+        width: 460px;
+        height: 235px;
+        left: -29px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer-form {
+        width: 460px;
+    }
+    .form-label {
+        width: 445px;
+        font-size: 12px;
+    }
+    .form-nombre {
+        width: 445px;
+        font-size: 14px;
+    }
+    .form-mensaje {
+        width: 455px;
+        height: 182px;
+        font-size: 14px;
+        
+    }
+    .form-btn {
+        padding: 10px 40px;
+    }
+    .footer-sboard {
+        width: 768px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px){
+    .header-principal {
+        width: 100%;
+        height: 72px;
+    }
+    .header-secundario {
+        width: 100%;
+        height: 25px;
+    }
+    .header-logo{
+        width: 50%;
+        height: 25px;
+    }
+    .logo {
+        width: 100px;
+        margin: 0px 0px 0px 18px;
+        font-size: 90%;
+    }
+    .header-busqueda {
+        width: 100px;
+        height: 10px;
+        margin: 0px;
+    }
+    .header-buscador {
+        width: 100px;
+        height: 10px;
+        font-size: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .header-login {
+        width: 50px;
+        height: 20px;
+        font-size: 12px;
+        margin: 0px 20px 0px ;
+    }
+    .banner-principal {
+        height: 100%;
+    }
+    .banner-container {
+        width: 90%;
+        max-width: 1920px;
+        height: 50%;
+        padding: 15px 0px 0px;
+    }
+    .banner-titulo {
+        font-size: 25px;
+    }
+    .banner-texto {
+       font-size: 12px;
+    }
+    .banner-texto span {
+        font-size: 15px;
+    }
+    .banner-boton {
+        width: 45%;
+        height: 10%;
+        padding: 5px 35px;
+        font-size: 10px;
+    }
+    .linea-articulos {
+        width: 360px;
+        height: 408px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px  0px;
+        margin: 0px;
+    }
+    .container-articulos {
+        width: 360px;
+        height: 408px;
+        margin: 0px 15px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-flow: row wrap;  
+    }
+    .header-articulos {
+        width: 328px;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 0px;
+        padding: 0px;
+    } 
+    .header-articulos a {
+        font-size: 12px;
+        margin: 0px 35px;
+    }
+    .titulo-articulos {
+        font-size: 18px;
+    }
+    .articulos {
+        width: 328px;
+        height: 335px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        margin: 0px;
+        gap: 0em 0.5em;
+    }
+    .card-articulo {
+        width: 80px;
+        height: 75px;
+        margin: 0px 0px;
+        gap: 2px;
+    }
+    .card-articulo img {
+        width: 80px;
+        height: 75px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .nombre-articulo {
+        font-size: 9px;
+    }
+    .precio-articulo {
+        font-size: 12px;
+    }
+    .link-articulo {
+        font-size: 10px;
+        margin: 0px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .footer {
+        width: 360px;
+        height: 480px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer-container {
+        width: 328px;
+        max-width: 1920px;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding: 0px;
+        gap: 0px;
+    }
+    .footer-logo {
+        width: 116px;
+        height: 30px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .footer-logo::after {
+        left: 18.7%;
+    }
+    .footer-links {
+        width: 328px;
+        height: 124px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-links a {
+        font-size: 12px; 
+        margin: 0px;
+        padding: 0px;
+       
+    }
+    .footer-contact {
+        width: 328px;     
+        height: 232px; 
+        gap: 20px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .footer-contacto {
+        width: 328px;
+        font-size: 16px;
+    }
+    .footer-form {
+        width: 328px;
+        height: 46px; 
+    }
+    .form-label {
+        width: 328px;
+        height: 26px;
+        font-size: 10px;
+        padding: 0px;
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .form-nombre {
+        width: 328px;
+        font-size: 12px;
+        padding: 0px;
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .form-mensaje {
+        width: 328px;
+        height: 42px;
+        font-size: 10px;
+        padding: 0px;
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .form-btn {
+        width: 40px;
+        height: 22px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        padding: 8px 25px;
+    }
+    .footer-sboard {
+        width: 360px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .copyright {
+        width: 229px;
+        height: 27px;
+        font-size: 10px;
+    }
+}
